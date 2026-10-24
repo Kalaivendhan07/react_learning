@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; color: #13232b; background: #f3f6f7; }
+a { color: #087ea4; }
+button { font: inherit; padding: 6px 12px; border: 1px solid #c9d6dc; border-radius: 8px; background: #fff; cursor: pointer; }
+input { font: inherit; padding: 7px 10px; border: 1px solid #c9d6dc; border-radius: 8px; width: 100%; }
+.muted { color: #5a6b73; }
+
+/* Layout: top bar + sticky sidebar. The WINDOW scrolls, so tasks that
+   listen to window scroll (Task 22) work without changes. */
+.theme { display: grid; grid-template-columns: 280px minmax(0, 1fr); grid-template-rows: auto 1fr; min-height: 100vh; }
+.topbar { grid-column: 1 / -1; position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 12px; height: 52px; padding: 0 16px; background: #fff; border-bottom: 1px solid #dde6ea; }
+.menu-btn { display: none; }
+.sidebar { position: sticky; top: 52px; height: calc(100vh - 52px); overflow-y: auto; padding: 12px; background: #fff; border-right: 1px solid #dde6ea; }
+.sidebar h2 { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: #5a6b73; margin: 16px 6px 6px; }
+.sidebar ul { list-style: none; margin: 0; padding: 0; }
+.sidebar input { margin: 8px 0; }
+.side-link, .task-link { display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 8px; color: inherit; text-decoration: none; }
+.task-link:hover, .side-link:hover { background: #eef3f5; }
+.task-link.active, .side-link.active { background: #d8eef6; color: #087ea4; font-weight: 700; }
+.task-link .num { width: 22px; font: 600 12px ui-monospace, monospace; color: #5a6b73; }
+.task-link .title { flex: 1; min-width: 0; }
+.tick { color: #1d8049; font-weight: 700; }
+.soon { font-size: 11px; color: #a36100; }
+.content { padding: 24px; min-width: 0; }
+
+.progress { height: 10px; background: #e3ecef; border-radius: 99px; overflow: hidden; }
+.progress i { display: block; height: 100%; background: #087ea4; transition: width .4s; }
+.levels { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 16px; }
+.level-card, .task-stage, .not-built, .crash { background: #fff; border: 1px solid #dde6ea; border-radius: 12px; padding: 16px; }
+.crash { border-color: #bf3434; }
+.badge { font: 700 12px ui-monospace, monospace; color: #087ea4; }
+.not-found { text-align: center; padding: 40px 0; }
+
+@media (max-width: 760px) {
+  .theme { grid-template-columns: minmax(0, 1fr); }
+  .menu-btn { display: inline-block; }
+  .sidebar { position: fixed; left: 0; width: 280px; z-index: 9; transform: translateX(-100%); transition: transform .25s; }
+  .menu-open .sidebar { transform: none; box-shadow: 0 0 40px rgb(0 0 0 / .2); }
+}
