@@ -44,7 +44,7 @@ const Comment = memo(function Comment({ comment, dispatch }) {
         )}
         <b>{comment.author}</b>
         <span className={'comment-role ' + comment.role.toLowerCase().replace(' ', '-')}>{comment.role}</span>
-        {total > 0 && <span className="comment-count">{total} replies</span>}
+        {total > 0 && <span className="comment-count">{total} {total === 1 ? 'reply' : 'replies'}</span>}
       </div>
 
       {mode === 'edit' ? null : <p className="comment-text">{comment.text}</p>}
