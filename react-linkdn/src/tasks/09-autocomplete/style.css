@@ -1,0 +1,44 @@
+.ac {
+  position: relative;
+  max-width: 400px;
+}
+
+.ac-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  margin: 4px 0 0;
+  padding: 4px;
+  list-style: none;
+  background: #fff;
+  border: 1px solid #dde6ea;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.ac-option {
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.ac-option:hover,
+.ac-option.active {
+  background: #d8eef6;
+}
+
+.ac-option mark {
+  background: #fbead0;
+  font-weight: 700;
+}
+
+.ac-info {
+  padding: 8px;
+  color: #5a6b73;
+}
+
+.ac-selected {
+  margin-top: 60px;
+}

@@ -1,0 +1,35 @@
+.otp {
+  max-width: 420px;
+}
+
+.otp-boxes {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.otp-boxes input {
+  width: 48px;
+  height: 56px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.otp-boxes input:focus {
+  outline: none;
+  border-color: #087ea4;
+  box-shadow: 0 0 0 2px #d8eef6;
+}
+
+.otp-message.ok {
+  color: #1d8049;
+  font-weight: 600;
+}
+
+.otp-message.error {
+  color: #bf3434;
+}
+
+.otp-timer {
+  color: #5a6b73;
+}

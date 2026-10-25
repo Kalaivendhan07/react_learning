@@ -1,0 +1,54 @@
+.signup {
+  max-width: 400px;
+}
+
+.signup-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+
+.signup-field label {
+  font-weight: 600;
+}
+
+.signup-field input[aria-invalid='true'] {
+  border-color: #bf3434;
+}
+
+.signup-error {
+  color: #bf3434;
+  font-size: 14px;
+}
+
+.signup-server-error {
+  padding: 10px;
+  border-radius: 8px;
+  background: #f8dede;
+  color: #bf3434;
+}
+
+.signup button {
+  width: 100%;
+  background: #087ea4;
+  border-color: #087ea4;
+  color: #fff;
+}
+
+.signup button:disabled {
+  opacity: 0.6;
+}
+
+.signup-hint {
+  font-size: 13px;
+  color: #5a6b73;
+}
+
+.signup-success {
+  padding: 16px;
+  border-radius: 8px;
+  background: #daf1e3;
+  color: #1d8049;
+  font-weight: 600;
+}

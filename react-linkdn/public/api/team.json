@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "Guna", "role": "Team Lead", "email": "guna@example.com" },
+  { "id": 2, "name": "Keerthi", "role": "Tester", "email": "keerthi@example.com" },
+  { "id": 3, "name": "Punitha", "role": "Tester", "email": "punitha@example.com" },
+  { "id": 4, "name": "Kalaivendhan", "role": "Developer", "email": "kalaivendhan@example.com" },
+  { "id": 5, "name": "Thulasi", "role": "Developer", "email": "thulasi@example.com" },
+  { "id": 6, "name": "Sambath", "role": "Developer", "email": "sambath@example.com" },
+  { "id": 7, "name": "Rajesh", "role": "Developer", "email": "rajesh@example.com" },
+  { "id": 8, "name": "Vishnu", "role": "Developer", "email": "vishnu@example.com" },
+  { "id": 9, "name": "Swathy", "role": "Developer", "email": "swathy@example.com" },
+  { "id": 10, "name": "Kaviraj", "role": "Developer", "email": "kaviraj@example.com" }
+]

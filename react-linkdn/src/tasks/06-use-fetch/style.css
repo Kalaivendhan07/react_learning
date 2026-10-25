@@ -1,0 +1,34 @@
+.fetch-urls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fetch-urls .selected {
+  background: #087ea4;
+  border-color: #087ea4;
+  color: #fff;
+}
+
+.fetch-status {
+  margin: 16px 0;
+}
+
+.fetch-error {
+  padding: 10px;
+  border-radius: 8px;
+  background: #f8dede;
+  color: #bf3434;
+}
+
+.fetch-list {
+  padding-left: 20px;
+}
+
+.fetch-list li {
+  margin-bottom: 6px;
+}
+
+.fetch-list span {
+  color: #5a6b73;
+}

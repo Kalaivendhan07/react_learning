@@ -1,0 +1,53 @@
+.counter {
+  text-align: center;
+}
+
+.counter-value {
+  font-size: 64px;
+  margin: 10px 0 20px;
+}
+
+.counter-controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.counter-controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.history {
+  margin-top: 30px;
+}
+
+.history p {
+  color: #5a6b73;
+  margin-bottom: 8px;
+}
+
+.history-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: #e3ecef;
+}
+
+.chip.current {
+  background: #087ea4;
+  color: #fff;
+}
+
+.chip.future {
+  background: #fff;
+  border: 1px dashed #c9d6dc;
+  color: #5a6b73;
+}

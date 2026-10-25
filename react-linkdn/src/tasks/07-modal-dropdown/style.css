@@ -1,0 +1,65 @@
+.clip-box {
+  height: 110px;
+  overflow: hidden;
+  padding: 12px;
+  border: 1px dashed #c9d6dc;
+  border-radius: 8px;
+}
+
+.dd-menu {
+  position: absolute;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  padding: 4px;
+  background: #fff;
+  border: 1px solid #dde6ea;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.dd-menu button {
+  border: none;
+  text-align: left;
+}
+
+.dd-menu button:hover,
+.dd-menu button:focus {
+  background: #eef3f5;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.modal-box {
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.modal-box h2 {
+  margin-top: 0;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.danger {
+  background: #bf3434;
+  border-color: #bf3434;
+  color: #fff;
+}

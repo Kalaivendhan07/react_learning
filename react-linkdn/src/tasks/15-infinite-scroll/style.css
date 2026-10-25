@@ -1,0 +1,87 @@
+.feed {
+  max-width: 600px;
+}
+
+.feed-progress {
+  position: fixed;
+  top: 52px;
+  left: 0;
+  z-index: 20;
+  height: 3px;
+  background: #087ea4;
+}
+
+.feed-card {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #dde6ea;
+  border-radius: 10px;
+}
+
+.feed-card {
+  align-items: center;
+}
+
+.feed-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  background: #eaf6ec;
+  font-size: 38px;
+}
+
+.feed-card b {
+  color: #1d8049;
+}
+
+.feed-card h3 {
+  margin: 0 0 4px;
+}
+
+.feed-card p {
+  margin: 0 0 6px;
+  color: #5a6b73;
+  font-size: 14px;
+}
+
+.feed-info {
+  text-align: center;
+  color: #5a6b73;
+}
+
+.feed-sentinel {
+  height: 1px;
+}
+
+.feed-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #087ea4;
+  border-color: #087ea4;
+  color: #fff;
+}
+
+.feed-tag {
+  margin-left: 6px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.feed-tag.vegetable {
+  background: #daf1e3;
+  color: #1d8049;
+}
+
+.feed-tag.fruit {
+  background: #fcebcb;
+  color: #a36100;
+}

@@ -1,0 +1,99 @@
+.dash {
+  --dash-bg: #ffffff;
+  --dash-card: #eef3f5;
+  --dash-text: #13232b;
+  --dash-muted: #5a6b73;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--dash-bg);
+  color: var(--dash-text);
+  border: 1px solid #dde6ea;
+}
+
+[data-theme='dark'] .dash {
+  --dash-bg: #122029;
+  --dash-card: #192b35;
+  --dash-text: #e2edf1;
+  --dash-muted: #93aab4;
+  border-color: #24404c;
+}
+
+.dash-side {
+  width: 140px;
+  padding: 12px;
+  background: var(--dash-card);
+  color: var(--dash-muted);
+}
+
+.dash-main {
+  flex: 1;
+  padding: 16px;
+}
+
+.dash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.dash-header h2 {
+  margin: 0;
+}
+
+.dash-header-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.dash-header select {
+  font: inherit;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.dash-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.dash-card {
+  flex: 1;
+  min-width: 130px;
+  padding: 12px;
+  border-radius: 8px;
+  background: var(--dash-card);
+}
+
+.dash-card span {
+  display: block;
+  color: var(--dash-muted);
+  font-size: 14px;
+}
+
+.dash-card b {
+  font-size: 24px;
+}
+
+.dash-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 8px;
+  background: var(--dash-card);
+}
+
+.dash-bar {
+  flex: 1;
+  border-radius: 4px 4px 0 0;
+}
+
+.dash-note {
+  color: #5a6b73;
+}

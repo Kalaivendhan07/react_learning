@@ -1,0 +1,58 @@
+.users-tools {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.users-tools select {
+  font: inherit;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+  padding: 8px;
+  border-bottom: 1px solid #e3ecef;
+  text-align: left;
+}
+
+.users-table th {
+  background: #eef3f5;
+}
+
+.users-table th button {
+  border: none;
+  background: none;
+  padding: 0;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.users-empty {
+  text-align: center;
+  color: #5a6b73;
+}
+
+.users-pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.user-card {
+  margin-top: 12px;
+  padding: 16px;
+  border: 1px solid #dde6ea;
+  border-radius: 10px;
+}
+
+.user-card h3 {
+  margin-top: 0;
+}
